@@ -1,0 +1,101 @@
+.fBox {
+  margin-top: 30px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 30px;
+  align-items: center;
+}
+
+.fBox a {
+  text-decoration: none;
+}
+
+.box {
+  width: 150px;
+  height: 150px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 600;
+  box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.6);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+/* Hover effect */
+.box:hover {
+  transform: translateY(-6px) scale(1.05);
+  box-shadow: 0 10px 25px rgba(88, 166, 255, 0.6);
+}
+
+/* Active click */
+.box:active {
+  transform: scale(0.95);
+}
+
+/* Box colors (gradient) */
+.b1 {
+  background: linear-gradient(135deg, #6a11cb, #2575fc); /* Purple → Blue */
+}
+.b2 {
+  background: linear-gradient(135deg, #ff512f, #dd2476); /* Orange → Pink */
+}
+.b3 {
+  background: linear-gradient(135deg, #11998e, #38ef7d); /* Green gradient */
+}
+.b4 {
+  background: linear-gradient(
+    135deg,
+    #ff6a00,
+    #ee0979
+  ); /* Red/Orange gradient */
+}
+
+.about {
+  /* width: 100%;
+  min-height: 35%; */
+  /* background: linear-gradient(135deg, #6a11cb, #2575fc); */
+  /* position: fixed; */
+  margin-top: 30px;
+  bottom: 0;
+  border-radius: 50% 50% 0 0;
+  text-align: center;
+  padding: 30px 20px;
+  color: #ffffff;
+  /* box-shadow: 0 -5px 20px rgba(0, 0, 0, 0.4); */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-h1 {
+  font-size: 2.2rem;
+  font-weight: 800;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+  background: linear-gradient(to right, #ffcc70, #ff8177);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.about-p {
+  font-size: 1rem;
+  line-height: 1.6;
+  max-width: 600px;
+  margin: 0 auto 15px auto;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.about-h3 {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-top: 10px;
+  color: #ffe97f;
+}
